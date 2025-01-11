@@ -342,7 +342,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail_vendor \
     libavservices_minijail.vendor \
-    libcodec2_hidl@1.1.vendor
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_vndk.vendor
 
 # Moto hardware
 PRODUCT_PACKAGES += \
@@ -370,19 +371,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml
-
-# OMX
-PRODUCT_PACKAGES += \
-    libcodec2_hidl@1.1.vendor \
-    libcodec2_vndk.vendor \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libmm-omxcore \
-    libstagefrighthw
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
